@@ -1,0 +1,7 @@
+alias deathstar='cd /home/$USER/spacework/HEAD/scripts && ./stop.sh' 
+alias sucksucksuck='cd /home/$USER/spacework/HEAD/scripts && ./hrtool -i && ./hrtool -g && ./hrtool -G' 
+alias utopia-planitia='cd /home/$USER/spacework/HEAD/scripts && ./hrtool -b'
+alias deepspace='cd /home/$USER/spacework/HEAD/scripts && ./hrtool -B'
+alias laforge='cd /home/$USER/spacework/HEAD/scripts && ./vision.sh'
+alias starcluster-server='cd /home/$USER/spacework/HEAD/scripts && ./dev9.sh'
+alias starcluster-client='cd /home/$USER/spacework/HEAD/scripts && ./dev8.sh' 
