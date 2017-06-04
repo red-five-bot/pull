@@ -4,9 +4,8 @@ if [[ ! $(lsb_release --codename --short) == "trusty" ]]; then
     exit 1
 fi
 date >> ~/$USER\@$HOSTNAME-build.log
-echo "alias deathstar='cd /home/$USER/spacework/HEAD/scripts && ./stop.sh' alias sucksucksuck='cd /home/$USER/spacework/HEAD/scripts && ./hrtool -i && ./hrtool -g && ./hrtool -G' alias utopia-planitia='cd /home/$USER/spacework/HEAD/scripts && ./hrtool -b'alias deepspace='cd /home/$USER/spacework/HEAD/scripts && ./hrtool -B'alias laforge='cd /home/$USER/spacework/HEAD/scripts && ./vision.sh'alias starcluster-server='cd /home/$USER/spacework/HEAD/scripts && ./dev9.sh'alias starcluster-client='cd /home/$USER/spacework/HEAD/scripts && ./dev8.sh'" >> /home/$USER/.bashrc
-bash
-sudo apt-get update 
+echo alias.txt >> /home/$USER/.bashrc
+
 sudo apt-get install build-essential cmake npm nodejs linux-image-extra-$(uname -r) linux-image-extra-virtual apt-transport-https ca-certificates curl software-properties-common -y 
 
 mkdir ~/spacework 
